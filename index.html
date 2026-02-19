@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <h1>papsi</h1>
+            <img src="images/logo.png" alt="logo">
+        </div>
+
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Product</li>
+            <li>Contact</li>
+            <li>Login</li>
+        </ul>
+        <div>
+                 <input type="text" placeholder="Search">
+        <i class="fa-duotone fa-solid fa-bars"></i>
+            <i class="fa-regular fa-address-book"></i>
+        </div>
+   
+    </nav>
+
+    <section class="hero-section">
+        <img src="images/back.png" alt="img">
+    </section>
+
+    <section class="card">
+        <div>
+            <img src="images/1.png" alt="img">
+            <p>price:130,RS</p>
+        </div>
+        <div>
+            <img src="images/2.png" alt="img">
+            <p>price:199,RS</p>
+        </div>
+        <div>
+            <img src="images/7.png" alt="img">
+            <p>price:220,RS</p>
+        </div>
+        <div>
+            <img src="images/4.png" alt="img">
+            <p>price:210,RS</p>
+        </div>
+        <div>
+            <img src="images/5.png" alt="img">
+            <p>price:140,RS</p>
+        </div>
+        <div>
+            <img src="images/6.png" alt="img">
+            <p>price:190,RS</p>
+        </div>
+        </div>
+        <div>
+            <img src="images/4.png" alt="img">
+            <p>price:150,RS</p>
+        </div>
+        <div>
+            <img src="images/5.png" alt="img">
+            <p>price:160,RS</p>
+        </div>
+        <div>
+            <img src="images/6.png" alt="img">
+            <p>price:170,RS</p>
+        </div>
+        <div>
+            <img src="images/6.png" alt="img">
+            <p>price:180,RS</p>
+        </div>
+    </section>
+
+    <script>
+    const menuBtn = document.querySelector(".fa-bars");
+    const navMenu = document.querySelector(".nav ul");
+
+    menuBtn.addEventListener("click", () => {
+        if (navMenu.style.display === "flex") {
+            navMenu.style.display = "none";
+        } else {
+            navMenu.style.display = "flex";
+        }
+    });
+</script>
+
+  
+
+   <body>
+
+
+</html>

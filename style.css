@@ -1,0 +1,228 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 50px;
+    background: linear-gradient(135deg,#50a0c2,#15252b,#a3c8d7);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo h1{
+    font-size: 22px;
+    color: #fff;
+}
+.logo img{
+    width: 40px;
+   
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0px 90px;
+}
+.nav ul li{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+nav ul li:hover{
+    color: #8d1d1d;
+}
+.nav input{
+ height: 20px;
+}
+
+
+/* Tablet Screen */
+@media (max-width: 992px) {
+    .nav {
+        padding: 12px 20px;
+    }
+
+    .nav ul {
+        gap: 15px;
+        margin: 0 30px;
+    }
+
+    .nav ul li {
+        font-size: 16px;
+    }
+
+    .nav input {
+        width: 120px;
+    }
+}
+
+
+/* Mobile Screen */
+@media (max-width: 768px) {
+
+    .nav {
+        position: relative;
+        padding: 12px 20px;
+    }
+
+    /* Hide menu by default */
+    .nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: #15252b;
+        text-align: center;
+        gap: 15px;
+        padding: 20px 0;
+        display: none;
+    }
+
+    .nav ul li {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    /* Show hamburger icon */
+    .fa-bars {
+        display: block;
+        font-size: 22px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    /* Hide search box on mobile */
+    .nav input {
+        display: none;
+    }
+}
+
+.hero-section {
+     background: linear-gradient(135deg,#0f2027,#528fa4,#2c5364);
+    display: flex;
+    justify-content: center;
+
+}
+.hero-section img{
+    transition: transform 1.5s ease-in-out;
+}
+.hero-section img:hover{
+    transform:rotate(360deg);
+}
+/* Card Section */
+.card {
+  background-color: #70aec4;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+/* All Cards Common Style */
+.card > div {
+  background: #397497;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.card > div:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Images */
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+}
+
+/* Price Text */
+.card p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* =========================
+   Tablet Screen (992px)
+========================= */
+@media (max-width: 992px) {
+
+  .hero-section img {
+    width: 80%;
+  }
+
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+
+  .card img {
+    height: 140px;
+  }
+
+}
+
+
+/* =========================
+   Mobile Screen (768px)
+========================= */
+@media (max-width: 768px) {
+
+  .hero-section {
+    padding: 20px;
+  }
+
+  .hero-section img {
+    width: 100%;
+  }
+
+  .card {
+    grid-template-columns: 1fr;  /* 1 card per row */
+    padding: 15px;
+  }
+
+  .card > div {
+    padding: 12px;
+  }
+
+  .card img {
+    height: 130px;
+  }
+
+  .card p {
+    font-size: 15px;
+  }
+}
+
+
+/* =========================
+   Small Mobile (480px)
+========================= */
+@media (max-width: 480px) {
+
+  .card img {
+    height: 110px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+}
